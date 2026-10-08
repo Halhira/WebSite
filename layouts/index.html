@@ -1,0 +1,5 @@
+{{ define "main" }}
+<h1>{{ site.Title }}</h1>
+<p>Hugo site is running.</p>
+{{ range site.RegularPages }}<p><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>{{ end }}
+{{ end }}
